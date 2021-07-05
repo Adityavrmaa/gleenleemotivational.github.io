@@ -1,0 +1,131 @@
+@font-face {
+    font-family: Playfair;
+    src: url("./fonts/Playfair.ttf ");
+  }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 60%;
+}
+@media (max-width: 767.98px) {
+    .container{
+        width: 100%!important;
+    }
+    .p-3 {
+        padding: 2rem!important;
+    }
+}
+
+
+/* .about_bgimage > h1{
+    background-image: url('../images/bgblue.png');
+    background-repeat: no-repeat;
+ 
+   } */
+
+#about_us{
+    margin-top:75px;
+}
+p{
+    font-family: Playfair;
+    font-size:1rem;
+
+}
+
+.right_sign > .right-sign{
+    background-color:#8B0000; 
+    color:#fff;
+    width: 100%;
+    height: 200px;
+}
+
+.right_sign p{
+    font-family: Playfair;
+    font-style: italic;
+  
+}
+.ceo_heading h4{
+    color:#8B0000; 
+}
+
+.about_sub_title{
+    color:#31353D;
+}
+
+
+.client_partner{
+    background-color: #31353D;
+}
+
+
+.media-container_row .letter-spacing >h2 {
+    letter-spacing: 10px;
+}
+
+/* client_partner */
+.client_partner{
+    padding: 20px 50px;
+}
+
+@media (min-width: 1400px) { 
+    p{
+        font-family: Playfair;
+        font-size:1rem;
+    
+    }
+ }
+
+ @media (min-width: 1200px) {
+    p{
+        font-family: Playfair;
+        font-size:1rem;
+    
+    }
+ }
+
+ @media (min-width: 992px) {  
+      p{
+    font-size:0.8rem;
+
+}
+ }
+
+/* -----------------------slider  ----------------------*/
+.items {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 100px
+}
+
+.slick-slide {
+    margin: 10px
+}
+
+.slick-slide img {
+    width: 100%;
+    border: 0px solid rgb(27, 20, 20)
+}
+
+.slider_img{
+    margin-bottom: 75px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #8B0000!important;
+  font-size: 28px!important;
+}
+
+.slick-prev {
+    left: -26px!important;
+}
+
+.slick-next {
+    right: -20px!important;
+}

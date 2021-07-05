@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
+:root{
+    --orange: #8B0000;
+    --white:white;
+    --text-color:#31353d;
+    --bgcolor:#31353D;
+    --cardColor:#DBDBDB;
+}
+
+@font-face {
+    font-family: antro;
+    src: url("../fonts/Antro_Vectra.otf");
+}
+
+@font-face {
+    font-family: Questrial;
+    src: url("./fonts/Questrial-Regular.ttf");
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url("../fonts/Avenir.otf");
+}
+
+@font-face {
+  font-family: Playfair;
+  src: url("./fonts/Playfair.ttf ");
+}
+
+@font-face {
+    font-family: avenirLight;
+    src: url("../fonts/AvenirLTProLight.otf");
+  }
+
+
+body{
+    background-color:var(--bgcolor)
+}
+
+.container{
+    width:70%!important;
+}
+
+h6{
+    font-family: Avenir;
+}
+
+.top_section_margin{
+    margin-top:50px;
+}
+/* card date and month css start here   */
+.card_format{
+    background-color:var(--cardColor);
+    width:150px;
+    position: absolute;
+    right: 18.1%;
+    top: 5%;
+}
+.card_format .card_month > h4{
+    color: var(--text-color);
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;  
+}
+.card_date{
+    color: var(--orange);
+    line-height: 35px;
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;  
+}
+.ceo_section{
+    position: relative;
+}
+.margin-card{
+    margin-top: 110px;
+}
+/* card */
+.card_format{
+    background-color:var(--cardColor);
+    width:150px;
+    position: absolute;
+    right: 0;
+    top: -26%;
+}
+/* card2 */
+.card_format2{
+    width:150px;
+    background-color:var(--cardColor);
+    position: absolute;
+    right: 0;
+    top: -19%;
+}
+/* card_format3 start */
+.card_format3{
+    width:170px;
+    background-color:var(--cardColor);
+    position: absolute;
+    right: 0;
+    top: -24%;
+}
+.card_date3{
+    color: var(--orange);
+    line-height: 35px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;  
+}/* card_format3 end*/
+/* card_format4 start*/
+.card_format4{
+    width:170px;
+    background-color:var(--cardColor);
+    position: absolute;
+    right: 0;
+    top: -26%;
+}
+.card_date4{
+    color: var(--orange);
+    line-height: 35px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;  
+}/* card_format4 end*/
+
+
+/* card_format 5 start*/
+.card_format5{
+    width:170px;
+    background-color:var(--cardColor);
+    position: absolute;
+    right: 0;
+    top: -22%;
+}
+.card_date5{
+    color: var(--orange);
+    line-height: 35px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;  
+}/* card_formate 5 end*/
+
+/* card date and month css end  */
+.Events_page{
+    margin:50px 50px;
+}
+
+.events-title > h1{
+    font-family: antro;
+    color: var(--white);
+}
+
+.events-sub-title > h4 {
+    font-family: 'Poppins', sans-serif;  
+    background-color: var(--bgcolor);
+    color:var(--white);
+}
+
+
+.sub-pera > p  {
+    font-family: avenirLight;
+    font-style: italic;
+    
+}
+
+.event-pera-item > p{
+    font-family: avenirLight;
+    font-size: 13px;
+}
+
+
+.event-pera-item ul > li{
+    font-family: 'Poppins', sans-serif;  
+    font-size: 13px;
+}
+
+.register_btn{
+    text-align: end;
+}
+
+
+.btn-btn-bg{
+    background-color: var(--orange);
+    color: var(--white);
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+padding: 7px 50px;
+}
+
+/* last_containt start here */
+.last_containt{
+    margin-top: 40px;
+}
+.btn-btn-bg:hover{
+    background-color:#4F545E;
+    color: var(--white);
+}
+
+
+.activities_contant{
+    font-family: 'Poppins', sans-serif;  
+}
+
+
+/* ------------------- media query in 768 -------------- */
+@media (max-width: 768px) { 
+    .container{
+        width:100%!important;
+        padding: 0!important;
+    }
+    .Events_page{
+        margin:10px!important;
+    }
+    .register_btn{
+        text-align: center!important;
+    }
+
+    .events-sub-title{
+        text-align: center!important;
+    }
+    .top_section_margin{
+        margin-top:20px;
+    }
+    .events-title > h1 {
+        font-size: 55px;
+    }
+    .event-pera-item > p{
+        font-family: avenirLight;
+        font-size: 20px;
+    }
+    
+    
+    .event-pera-item ul > li{
+        font-family: 'Poppins', sans-serif;  
+        font-size: 18px;
+    }
+
+
+    /* card section madia quary start */
+    .margin-card{
+        margin-top: 20px;
+    }
+    .card_format {
+        align-items: center;
+     position: static!important; 
+     width: 100%;
+     background-color: #fff1f1;
+         margin-bottom: 15px;
+    }
+
+    .card_format2 {
+        align-items: center;
+     position: static!important; 
+     width: 100%;
+     background-color: #fff1f1;
+         margin-bottom: 15px;
+    }
+    .card_format3 {
+        align-items: center;
+     position: static!important; 
+     width: 100%;
+     background-color: #fff1f1;  
+         margin-bottom: 15px;
+    }
+
+    .card_format4 {
+        align-items: center;
+     position: static!important; 
+     width: 100%;
+     background-color: #fff1f1;
+         margin-bottom: 15px;
+    }
+    .card_format5 {
+        align-items: center;
+     position: static!important; 
+     width: 100%;
+     background-color: #fff1f1;
+         margin-bottom: 15px;
+    }
+
+    /* card section madia quary End */
+}

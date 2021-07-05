@@ -1,0 +1,2043 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <!-- font awesome cdn link  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+    integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- jquery cdn link    -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- animate.css cdn link  -->
+  <!-- logo name -->
+  <title>GleenLee</title>
+  <link rel="icon" href="./images/GLENN LEE.png" type="icon">
+  <!-- logo name -->
+  <link rel="stylesheet" href="./style.css">
+
+
+
+
+  <style>
+    /* .carousel-indicators button{ width: 14px; height: 14px; border-radius: 100%; } */
+  </style>
+</head>
+
+<body>
+  <section>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid d-block">
+
+        <button class="navbar-toggler" type="button" style="float: right;" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="text-center">
+
+          <span class="mobile_icon_hidedesktop"><img src="./images/GLENN LEE.png" alt="" width="50px"
+              class="d-inline-block align-text-top">
+        </div></span>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#main_section">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#fifth_training">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#what_we_offer">WHAT WE OFFER</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Events.html">EVENTS</a>
+            </li>
+
+            <a class="navbar-brand navbar_icon " href="#">
+              <img src="./images/GLENN LEE.png" alt="" width="50px" class="d-inline-block align-text-top">
+            </a>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#Our_Team" style="padding-left: 2px;">MEET THE TEAM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html" target="_blank">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contactForm.html" target="_blank"><button
+                  class="btn contact_button" ">CONTACT</button></a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </section>
+
+
+
+
+
+  <!-- second section start here  -->
+  <section>
+    <div class="second_heading" >
+      <p>YOUR CERTIFIED BUSINESS PARTNERS </p>
+    </div>
+  </section>
+  <!-- second section start end  -->
+
+  <!-- third section start  -->
+  <section id="main_section" class="d-flex align-items-center" >
+    <div class=" container d-flex flex-column align-items-center" >
+      <h1>SOMETIMES</h1>
+      <h2>Business is a Jungle</h2>
+      <h3>YOU CAN DO ANYTHING, BUT NOT EVERYTHING</h3>
+      <div class="customer_services">
+        <p>CUSTOMER SERVICE</p>
+      </div>
+      <div class="Home_button">
+        <a href="./login1page.html" target="_blank"><button type="button" class="btn home-button1">Learn
+            more</button></a>
+         
+
+         <div class="video-btn btn home-button2" 
+          data-src="https://www.youtube.com/embed/yQjgGAlvwu8">
+          Watch video
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- watch now modal    -->
+
+  
+ 
+  <div class="modal fade" id="MakeModal" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content  ">
+        <div class="modal-header text-right pull-right float-right">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body popup__overlay">
+          <iframe class="set_video_mobile" width="100%" height="500px" src="" id="video" frameborder="0" allowscriptaccess="always"
+            allow="autoplay" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- watch now modal    -->
+
+<script>
+  $(document).ready(function () {
+    var $videoSrc;
+    $(".video-btn").click(function () {
+      $videoSrc = $(this).data("src");
+    });
+    $("#MakeModal").on("shown.bs.modal", function (e) {
+      $("#video").attr(
+        "src",
+        $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+      );
+    });
+    $("#MakeModal").on("hide.bs.modal", function (e) {
+      $("#video").attr("src", $videoSrc);
+    });
+  });
+</script>
+<!-- watch now modal end   -->
+  <!-- third section start  -->
+
+  <!-- free Assessment 4th section start0
+     here  -->
+  <header id="forth_freeAssessment">
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source
+        src="https://player.vimeo.com/external/403663876.sd.mp4?s=c7b117e94e9dc879b1a7cc5511d2bb1a5c0715d0&profile_id=139&oauth2_token_id=57447761"
+        type="video/mp4">
+    </video>
+    <div class="container h-100 assessment_heading">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <h1 class="fs-3 ">Take Our</h1>
+          <p class="free_assessment lead m-4 fs-2 fw-bolder">FREE ASSESSMENT</p>
+          <h3 class="fw-bold fs-2">Measuring the WHAT,<br>
+            WHY & HOW of Personal <br> Performance </h3>
+          <a href="./TakeAssisment.html" target="_blank"><button class="btn home-button1 fw-bold fs-4 mt-3">Take
+              Assessment</button></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- forth section End here  -->
+  <!-- fifth section Start here  -->
+
+  <section id="fifth_training">
+    <div class="training_section p-3 text-center">
+      <div class="training_heading fs-3 fw-bold m-5">
+        TRAINING AND DEVELOPING <br>BUSINESS OWNERS AND CORPORATE <br>LEADERS WITH THE SKILLS TO
+      </div>
+      <div class="fs-1 fw-bold training_heading2">
+        <p>Build, Grow, and Scale</p>
+      </div>
+      <p class="fs-3 fw-bold training_org">THEIR ORGANIZATIONS</p>
+
+      <div class="training_box ">
+        <h1 class="pt-5">Vision:</h1>
+        <p class="fs-3 fw-normal ">We consult small business owners and <br>corporate leaders globally to create <br>
+          innovative, cohesive cultures that <br> maximize their market. </p>
+        <h2>Values:</h2>
+        <p class="free_transparency lead m-4 fs-1 fw-bold text-white">TRANSPARENCY</p>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- fifth section End here  -->
+
+  <!-- sixth (our story paga) section start here  -->
+
+  <section id="our-story">
+    <div class="container text-center">
+      <div class="our_storyheading">
+        <h1 class="ourstory_text">Our Story:</h1>
+      </div>
+      <div class="our_storyPeragraph  pt-3 ">
+
+        <p>After spending a decade in a corporate setting and 20 years as an entrepreneur, our
+          founder recognized there was something missing. A piece that was critical to the
+          development of high performing teams with a high level of emotional maturity. leaders
+          were expecting their teams to produce quality products, excel in sales, and create cohesive
+          cultures. However, most weren’t given the practical tools and framework needed to thrive.
+          As a result, Kendall Ficklin took action and began training a diverse group of leaders and
+          teams to maximize their performance and their results.
+        </p>
+        <p>
+          As a result, we have worked with national sports leagues, financial powerhouses, Fortune
+          500 companies, nonprofit organizations, healthcare systems and several small businesses.
+          We have taken great joy in watching our clients succeed, unlock new levels, and get the
+          revenue they deserve.
+        </p>
+
+      </div>
+  </section>
+
+
+
+
+  <!-- sixth section End here  -->
+  <!-- ======= what we offer Section ======= -->
+  <section id="what_we_offer" class="what_we_offer">
+    <div class="container" data-aos="fade-up">
+      <div class="text-center offer-title  mb-5">
+        <p class="fs-1 fw-bold">What we Offer</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="box-overlay"></div>
+          <div class="icon-box box-one text-white p-5">
+
+            <div class="icon">
+              <i class="fa-2x fas fa-envelope text-white"></i>
+            </div>
+            <h4 class="fw-bold pt-2">BUSINESS <br>DEVELOPMENT</h4>
+            <p>Growing and scaling your business requires strategy, skill, and technique.
+              Our team can help you develop a strategic plan, viable processes, and workflows that work.
+              Together, we maximize your resources to maximize your revenue. </p>
+            <div class="box-order mt-4">
+              <ul>
+                <li>Strategic Planning</li>
+                <li>Process Mapping</li>
+                <li>Workflow Design</li>
+              </ul>
+            </div>
+            <div class="text-center">
+              <a href="./login1page.html" target="_blank"> <button type="button"
+                  class=" btn btn-outline-light mt-4">LEARN MORE</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="box-overlay"></div>
+          <div class="icon-box box-two text-white  p-5">
+
+            <div class="icon">
+              <i class="fa-2x fas fa-users"></i>
+            </div>
+            <h4 class="fw-bold pt-2">LEADERSHIP <br> DEVELOPMENT</h4>
+            <p>Effective leadership starts with who you are versus what you do.
+              Our team provides tools and strategy to expand your current capacity to
+              properly influence your organization’s success. </p>
+            <div class="box-order mt-5 ">
+              <ul>
+                <li>Increase Your Self-Awareness</li>
+                <li>Define Your Leadership Style</li>
+                <li>Maximize Your Level of Influence</li>
+              </ul>
+            </div>
+            <div class="text-center mt-5">
+              <a href="./login1page.html" target="_blank"> <button type="button" class=" btn btn-outline-light">LEARN
+                  MORE</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="box-overlay"></div>
+          <div class="icon-box box-three text-white  p-5">
+
+            <div class="icon">
+              <i class="fa-2x fas fa-handshake"></i>
+            </div>
+            <h4 class="fw-bold pt-2">TEAM DEVELOPMENT <br>& SALES</h4>
+            <p>Effective leadership starts with who you are versus what you do.
+              Our team provides tools and strategy to expand your current capacity to
+              properly influence your organization’s success. </p>
+            <div class="box-order mt-5">
+              <ul>
+                <li>Create a Thriving Culture</li>
+                <li>Maintain Accountability</li>
+                <li>Communicate Effectively</li>
+              </ul>
+            </div>
+            <div class="text-center mt-5">
+              <a href="./login1page.html" target="_blank"> <button type="button" class=" btn btn-outline-light">LEARN
+                  MORE</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Services Section -->
+
+
+
+  <!--   EVENTS     eight 8th section start here  -->
+  <section id="Events" class="Events ">
+    <div class="container" data-aos="fade-up">
+      <div class="text-center  Events-title ">
+        <p class="fs-1 fw-bold  pt-3">Events</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6  d-flex align-items-stretch position-relative" data-aos="zoom-in"
+          data-aos-delay="100">
+          <div class="icon-box">
+
+            <div class="video_play_button">
+              <video width="100%">
+                <source class=" video-btn"
+                  src="https://player.vimeo.com/external/374265101.sd.mp4?s=dac19b26168d8f08bcb743230003266a0e15e23d&profile_id=139&oauth2_token_id=57447761"
+                  type="video/ogg">
+              </video>
+              <div class="video_play">
+                <!-- <i class="video-btn cursor-pointer play_icon text-white fa-2x fas fa-play-circle" ></i> -->
+                  
+              <div class="video-btn play_icon" data-bs-toggle="modal" data-bs-target="#MakeModal1"
+              data-src="https://www.youtube.com/embed/yQjgGAlvwu8">
+              <i class="video-btn cursor-pointer text-white fa-2x fas fa-play-circle" ></i>
+            </div>
+            
+              </div>
+
+
+            </div>
+            <!-- -------------------------video model 1---------------- -->
+            <div class="modal fade" id="MakeModal1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content  ">
+                  <div class="modal-header text-right pull-right float-right">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body popup__overlay">
+                    <iframe class="set_video_mobile" width="100%" height="500px" src="" id="video1" frameborder="0" allowscriptaccess="always"
+                      allow="autoplay" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- watch now modal    -->
+          
+          <script>
+            $(document).ready(function () {
+              var $videoSrc;
+              $(".video-btn").click(function () {
+                $videoSrc = $(this).data("src");
+              });
+              $("#MakeModal1").on("shown.bs.modal", function (e) {
+                $("#video1").attr(
+                  "src",
+                  $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+                );
+              });
+              $("#MakeModal1").on("hide.bs.modal", function (e) {
+                $("#video1").attr("src", $videoSrc);
+              });
+            });
+          </script>
+
+
+            <!---------------------------video model 1 end--------------------- -->
+
+            <div class="text-center">
+              <p class="fw-bold">UNDERSTAND YOURSELF AND OTHERS: <Br></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch position-relative" data-aos="zoom-in"
+          data-aos-delay="100">
+          <div class="icon-box">
+            <div class="video_play_button">
+              <video width="100%">
+                <source
+                  src="https://player.vimeo.com/external/210741487.sd.mp4?s=f3bacb23e5791a132f2576ed2b935bd229ec0247&profile_id=164&oauth2_token_id=57447761"
+                  type="video/ogg">
+              </video>
+              <div class="video_play">
+                <div class="video-btn play_icon" data-bs-toggle="modal" data-bs-target="#MakeModal2"
+                data-src="https://www.youtube.com/embed/yQjgGAlvwu8">
+                <i class="video-btn cursor-pointer text-white fa-2x fas fa-play-circle" ></i>
+              </div>
+
+              </div>
+            </div>
+            <!-- -------------------------video model 2---------------- -->
+            <div class="modal fade" id="MakeModal2" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content  ">
+                  <div class="modal-header text-right pull-right float-right">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body popup__overlay">
+                    <iframe class="set_video_mobile" width="100%" height="500px" src="" id="video2" frameborder="0" allowscriptaccess="always"
+                      allow="autoplay" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- watch now modal    -->
+          
+          <script>
+            $(document).ready(function () {
+              var $videoSrc;
+              $(".video-btn").click(function () {
+                $videoSrc = $(this).data("src");
+              });
+              $("#MakeModal2").on("shown.bs.modal", function (e) {
+                $("#video2").attr(
+                  "src",
+                  $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+                );
+              });
+              $("#MakeModal2").on("hide.bs.modal", function (e) {
+                $("#video2").attr("src", $videoSrc);
+              });
+            });
+          </script>
+
+            <!---------------------------video model 2 end--------------------- -->
+
+
+            <div class="text-center">
+              <p class="fw-bold">TEAM BUILDING IN THE JUNFLE WITH <br>
+                KENLEE</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6  d-flex align-items-stretch position-relative" data-aos="zoom-in"
+          data-aos-delay="100">
+          <div class="icon-box">
+
+            <div class="video_play_button">
+              <video width="100%">
+                <source
+                  src="https://player.vimeo.com/external/174003112.sd.mp4?s=0aca1de18a826b18ecdddc68045a207f86e6c5a5&profile_id=164&oauth2_token_id=57447761"
+                  type="video/ogg">
+              </video>
+              <div class="video_play">
+                <div class="video-btn play_icon" data-bs-toggle="modal" data-bs-target="#MakeModal3"
+                data-src="https://www.youtube.com/embed/yQjgGAlvwu8">
+                <i class="video-btn cursor-pointer text-white fa-2x fas fa-play-circle" ></i>
+              </div>
+              </div>
+            </div>
+
+            <!-- ------------------------- video model 3---------------- -->
+            <div class="modal fade" id="MakeModal3" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content  ">
+                  <div class="modal-header text-right pull-right float-right">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body popup__overlay">
+                    <iframe class="set_video_mobile" width="100%" height="500px" src="" id="video3" frameborder="0" allowscriptaccess="always"
+                      allow="autoplay" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- watch now modal    -->
+          
+          <script>
+            $(document).ready(function () {
+              var $videoSrc;
+              $(".video-btn").click(function () {
+                $videoSrc = $(this).data("src");
+              });
+              $("#MakeModal3").on("shown.bs.modal", function (e) {
+                $("#video3").attr(
+                  "src",
+                  $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+                );
+              });
+              $("#MakeModal3").on("hide.bs.modal", function (e) {
+                $("#video3").attr("src", $videoSrc);
+              });
+            });
+          </script>
+
+
+            <!--------------------------- video model 3 end--------------------- -->
+
+            <div class="text-center">
+              <p class="fw-bold">YOU DID'T GET HERE TO STOP HERE - <br>
+                KENDELL </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6  d-flex align-items-stretch position-relative" data-aos="zoom-in"
+          data-aos-delay="100">
+          <div class="icon-box">
+
+            <div class="video_play_button">
+              <video width="100%">
+                <source
+                  src="https://player.vimeo.com/external/174003112.sd.mp4?s=0aca1de18a826b18ecdddc68045a207f86e6c5a5&profile_id=164&oauth2_token_id=57447761"
+                  type="video/ogg">
+              </video>
+              <div class="video_play">
+                <div class="video-btn play_icon" data-bs-toggle="modal" data-bs-target="#MakeModal4"
+                data-src="https://www.youtube.com/embed/yQjgGAlvwu8">
+                <i class="video-btn cursor-pointer text-white fa-2x fas fa-play-circle" ></i>
+              </div>
+              </div>
+            </div>
+            <!-- ------------------------video model 4---------------- -->
+            <div class="modal fade" id="MakeModal4" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content  ">
+                  <div class="modal-header text-right pull-right float-right">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body popup__overlay">
+                    <iframe class="set_video_mobile" width="100%" height="500px" src="" id="video4" frameborder="0" allowscriptaccess="always"
+                      allow="autoplay" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- watch now modal    -->
+          
+          <script>
+            $(document).ready(function () {
+              var $videoSrc;
+              $(".video-btn").click(function () {
+                $videoSrc = $(this).data("src");
+              });
+              $("#MakeModal4").on("shown.bs.modal", function (e) {
+                $("#video4").attr(
+                  "src",
+                  $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+                );
+              });
+              $("#MakeModal4").on("hide.bs.modal", function (e) {
+                $("#video4").attr("src", $videoSrc);
+              });
+            });
+          </script>
+
+
+            <!--------------------------- video model 4 end--------------------- -->
+
+            <div class="text-center">
+              <p class="fw-bold">PROFESSIONAL DEVELOPMENT <br> WORKSHOP WITH DENDELL </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6  d-flex align-items-stretch position-relative" data-aos="zoom-in"
+          data-aos-delay="100">
+          <div class="icon-box">
+
+            <div class="video_play_button">
+              <video width="100%">
+                <source
+                  src="https://player.vimeo.com/external/372104562.sd.mp4?s=f8b492ccb2633704e97d4bd0f3b76c9af25bdc9f&profile_id=139&oauth2_token_id=57447761"
+                  type="video/ogg">
+              </video>
+              <div class="video_play">
+                <div class="video-btn play_icon" data-bs-toggle="modal" data-bs-target="#MakeModal5"
+                data-src="https://www.youtube.com/embed/yQjgGAlvwu8">
+                <i class="video-btn cursor-pointer text-white fa-2x fas fa-play-circle" ></i>
+              </div>
+              </div>
+            </div>
+            <!-- -------------------------video model 5 start---------------- -->
+            <div class="modal fade" id="MakeModal5" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content  ">
+                  <div class="modal-header text-right pull-right float-right">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body popup__overlay">
+                    <iframe class="set_video_mobile" width="100%" height="500px" src="" id="video5" frameborder="0" allowscriptaccess="always"
+                      allow="autoplay" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- watch now modal    -->
+          
+          <script>
+            $(document).ready(function () {
+              var $videoSrc;
+              $(".video-btn").click(function () {
+                $videoSrc = $(this).data("src");
+              });
+              $("#MakeModal5").on("shown.bs.modal", function (e) {
+                $("#video5").attr(
+                  "src",
+                  $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+                );
+              });
+              $("#MakeModal5").on("hide.bs.modal", function (e) {
+                $("#video5").attr("src", $videoSrc);
+              });
+            });
+          </script>
+
+
+            <!--------------------------- video model 5  end--------------------- -->
+
+
+            <div class="text-center">
+              <p class="fw-bold">DENLEE | THE EFFORT <br>
+                ASSESSMENT</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6  d-flex align-items-stretch position-relative" data-aos="zoom-in"
+          data-aos-delay="100">
+          <div class="icon-box">
+            <div class="video_play_button">
+              <video width="100%">
+                <source
+                  src="https://player.vimeo.com/external/173394975.sd.mp4?s=1e2e32d1eba99d76f19b8d0726071c4860d0f304&profile_id=164&oauth2_token_id=57447761"
+                  type="video/ogg">
+              </video>
+              <div class="video_play">
+                <div class="video-btn play_icon" data-bs-toggle="modal" data-bs-target="#MakeModal6"
+                data-src="https://www.youtube.com/embed/yQjgGAlvwu8">
+                <i class="video-btn cursor-pointer text-white fa-2x fas fa-play-circle" ></i>
+              </div>
+              </div>
+            </div>
+            <!-- -------------------------video model 6---------------- -->
+            <div class="modal fade" id="MakeModal6" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content  ">
+                  <div class="modal-header text-right pull-right float-right">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body popup__overlay">
+                    <iframe class="set_video_mobile" width="100%" height="500px" src="" id="video6" frameborder="0" allowscriptaccess="always"
+                      allow="autoplay" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- watch now modal    -->
+          
+          <script>
+            $(document).ready(function () {
+              var $videoSrc;
+              $(".video-btn").click(function () {
+                $videoSrc = $(this).data("src");
+              });
+              $("#MakeModal6").on("shown.bs.modal", function (e) {
+                $("#video6").attr(
+                  "src",
+                  $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+                );
+              });
+              $("#MakeModal6").on("hide.bs.modal", function (e) {
+                $("#video6").attr("src", $videoSrc);
+              });
+            });
+          </script>
+
+            <!--------------------------- video model end--------------------- -->
+            <div class="text-center">
+              <p class="fw-bold"> I STARTED MAKING UP THE BED! </p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!--8th section End Services Section -->
+
+
+  <!-- mobile view events  -->
+  <!-- -------------------------------------------------------- -->
+  <section id="movile_view_carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+          class="active carousel-mobile" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          class="active carousel-mobile" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          class="active carousel-mobile" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          class="active carousel-mobile" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+          class="active carousel-mobile" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+          class="active carousel-mobile" aria-label="Slide 6"></button>
+
+      </div>
+
+      
+      <div class="carousel-inner">
+        <!-- slider 1   -->
+        <div class="carousel-item active">
+          <img
+            src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            class="d-block w-100" alt="...">
+          <div class="mobile_video_play">
+
+              <div class="video-btn  mobile_play_icon" data-bs-toggle="modal" data-bs-target="#MakeModal7"
+                data-src="https://www.youtube.com/embed/yQjgGAlvwu8">
+                <i class="video-btn cursor-pointer text-white fa-2x fas fa-play-circle" ></i>
+              </div>
+          </div>
+          <!-- <div class="mobile_video_contant text-white">
+        <h2>UNDERSTAND YOURSELF <br> AND OTHERS:</h2>
+       </div> -->
+        </div>
+        <!--  ------------------- video modal 1 --------------------- -->
+       
+        <div class="modal fade" id="MakeModal7" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content  ">
+              <div class="modal-header text-right pull-right float-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body popup__overlay">
+                <iframe width="100%" height="320px" src="" id="video7" frameborder="0" allowscriptaccess="always"
+                  allow="autoplay" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- watch now modal    -->
+      
+      <script>
+        $(document).ready(function () {
+          var $videoSrc;
+          $(".video-btn").click(function () {
+            $videoSrc = $(this).data("src");
+          });
+          $("#MakeModal7").on("shown.bs.modal", function (e) {
+            $("#video7").attr(
+              "src",
+              $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+            );
+          });
+          $("#MakeModal7").on("hide.bs.modal", function (e) {
+            $("#video7").attr("src", $videoSrc);
+          });
+        });
+      </script>
+        <!--  ------------------- video modal 1--------------------- -->
+        <!-- slider 1 end  -->
+        <!-- slider 2   -->
+        <div class="carousel-item">
+          <img
+            src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            class="d-block w-100" alt="...">
+          <div class="mobile_video_play">
+            <div class="video-btn  mobile_play_icon" data-bs-toggle="modal" data-bs-target="#MakeModal8"
+            data-src="https://www.youtube.com/embed/yQjgGAlvwu8">
+            <i class="video-btn cursor-pointer text-white fa-2x fas fa-play-circle" ></i>
+          </div>
+          </div>
+          <!-- <div class="mobile_video_contant text-white">
+        <h2>TEAM BUILDING IN THE <br> JUNFLE WITH
+          KENLEE</h2>
+       </div>
+     -->
+        </div>
+        <!--  -------event mobile video modal 2 ---------- -->
+        
+        <div class="modal fade" id="MakeModal8" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content  ">
+              <div class="modal-header text-right pull-right float-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body popup__overlay">
+                <iframe width="100%" height="320px" src="" id="video8" frameborder="0" allowscriptaccess="always"
+                  allow="autoplay" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- watch now modal    -->
+      
+      <script>
+        $(document).ready(function () {
+          var $videoSrc;
+          $(".video-btn").click(function () {
+            $videoSrc = $(this).data("src");
+          });
+          $("#MakeModal8").on("shown.bs.modal", function (e) {
+            $("#video8").attr(
+              "src",
+              $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+            );
+          });
+          $("#MakeModal8").on("hide.bs.modal", function (e) {
+            $("#video8").attr("src", $videoSrc);
+          });
+        });
+      </script>
+        <!--  -------------------event mobile video modal 2-------------------- -->
+ <!-- slider 2 end  -->
+
+  <!-- slider 3 start  -->
+        <div class="carousel-item">
+          <img
+            src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            class="d-block w-100" alt="...">
+          <div class="mobile_video_play">
+            <div class="video-btn  mobile_play_icon" data-bs-toggle="modal" data-bs-target="#MakeModal9"
+            data-src="https://www.youtube.com/embed/yQjgGAlvwu8">
+            <i class="video-btn cursor-pointer text-white fa-2x fas fa-play-circle" ></i>
+          </div>
+          </div>
+    
+
+        </div>
+        <!--  -------event mobile video modal 3 ---------- -->
+        <div class="modal fade" id="MakeModal9" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content  ">
+              <div class="modal-header text-right pull-right float-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body popup__overlay">
+                <iframe width="100%" height="320px" src="" id="video9" frameborder="0" allowscriptaccess="always"
+                  allow="autoplay" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- watch now modal    -->
+      
+      <script>
+        $(document).ready(function () {
+          var $videoSrc;
+          $(".video-btn").click(function () {
+            $videoSrc = $(this).data("src");
+          });
+          $("#MakeModal9").on("shown.bs.modal", function (e) {
+            $("#video9").attr(
+              "src",
+              $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+            );
+          });
+          $("#MakeModal9").on("hide.bs.modal", function (e) {
+            $("#video9").attr("src", $videoSrc);
+          });
+        });
+      </script>
+        <!--  -------------------event mobile video modal 3 -------------------- -->
+
+  <!-- slider 3 end  -->
+
+  
+  <!-- slider 4 start  -->
+
+        <div class="carousel-item">
+          <img
+            src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            class="d-block w-100" alt="...">
+          <div class="mobile_video_play">
+            <div class="video-btn  mobile_play_icon" data-bs-toggle="modal" data-bs-target="#MakeModal10"
+            data-src="https://www.youtube.com/embed/yQjgGAlvwu8">
+            <i class="video-btn cursor-pointer text-white fa-2x fas fa-play-circle" ></i>
+          </div>
+
+          </div>
+
+          <!-- <div class="mobile_video_contant text-white">
+        <h2>PROFESSIONAL DEVELOPMENT </h2>
+       </div> -->
+
+        </div>
+        <!--  -------event mobile video modal 4 ---------- -->
+        <div class="modal fade" id="MakeModal10" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content  ">
+              <div class="modal-header text-right pull-right float-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body popup__overlay">
+                <iframe width="100%" height="320px" src="" id="video10" frameborder="0" allowscriptaccess="always"
+                  allow="autoplay" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- watch now modal    -->
+      
+      <script>
+        $(document).ready(function () {
+          var $videoSrc;
+          $(".video-btn").click(function () {
+            $videoSrc = $(this).data("src");
+          });
+          $("#MakeModal10").on("shown.bs.modal", function (e) {
+            $("#video10").attr(
+              "src",
+              $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+            );
+          });
+          $("#MakeModal10").on("hide.bs.modal", function (e) {
+            $("#video10").attr("src", $videoSrc);
+          });
+        });
+      </script>
+         <!--  -------------------event mobile video modal 4 end -------------------- -->
+ <!-- slider 4 end  -->
+
+ <!-- slider 5 start -->
+ <div class="carousel-item">
+  <img
+    src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    class="d-block w-100" alt="...">
+  <div class="mobile_video_play">
+    <div class="video-btn  mobile_play_icon" data-bs-toggle="modal" data-bs-target="#MakeModal11"
+    data-src="https://www.youtube.com/embed/yQjgGAlvwu8">
+    <i class="video-btn cursor-pointer text-white fa-2x fas fa-play-circle" ></i>
+  </div>
+
+  </div>
+
+</div>
+<!--  -------event mobile video modal 5 start ---------- -->
+<div class="modal fade" id="MakeModal11" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content  ">
+      <div class="modal-header text-right pull-right float-right">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body popup__overlay">
+        <iframe width="100%" height="320px" src="" id="video11" frameborder="0" allowscriptaccess="always"
+          allow="autoplay" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- watch now modal    -->
+
+<script>
+$(document).ready(function () {
+  var $videoSrc;
+  $(".video-btn").click(function () {
+    $videoSrc = $(this).data("src");
+  });
+  $("#MakeModal11").on("shown.bs.modal", function (e) {
+    $("#video11").attr(
+      "src",
+      $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+    );
+  });
+  $("#MakeModal11").on("hide.bs.modal", function (e) {
+    $("#video11").attr("src", $videoSrc);
+  });
+});
+</script>
+  <!--  -------------------event mobile video modal 5 end -------------------- -->
+         <!-- slider 5 end-->
+
+    <!-- slider 6 start-->
+    <div class="carousel-item">
+      <img
+        src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        class="d-block w-100" alt="...">
+      <div class="mobile_video_play">
+        <div class="video-btn  mobile_play_icon" data-bs-toggle="modal" data-bs-target="#MakeModal12"
+        data-src="https://www.youtube.com/embed/yQjgGAlvwu8">
+        <i class="video-btn cursor-pointer text-white fa-2x fas fa-play-circle" ></i>
+      </div>
+    
+      </div>
+    
+    </div>
+    <!--  -------event mobile video modal 5 start ---------- -->
+    <div class="modal fade" id="MakeModal12" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content  ">
+          <div class="modal-header text-right pull-right float-right">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body popup__overlay">
+            <iframe width="100%" height="320px" src="" id="video12" frameborder="0" allowscriptaccess="always"
+              allow="autoplay" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- watch now modal    -->
+    
+    <script>
+    $(document).ready(function () {
+      var $videoSrc;
+      $(".video-btn").click(function () {
+        $videoSrc = $(this).data("src");
+      });
+      $("#MakeModal12").on("shown.bs.modal", function (e) {
+        $("#video12").attr(
+          "src",
+          $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+        );
+      });
+      $("#MakeModal12").on("hide.bs.modal", function (e) {
+        $("#video12").attr("src", $videoSrc);
+      });
+    });
+    </script>
+      
+  
+     
+        <!--  -------------------event mobile video modal 6 -------------------- -->
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <!-- ---------------------- mobile view events---------------------------------- -->
+ 
+
+
+  <!--    ---------Testimonials 10th section start here==========  -->
+  <section id="Testimonials" class="Testimonials">
+    <div class="container" data-aos="fade-up">
+      <div class="text-center Testimonials-title   mb-4">
+        <p class="fs-1 fw-bold">Testimonials</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="Testimonials-border  p-5">
+            <div class="circle_image text-center">
+              <img src="./images/circle-cropped 3.png" width="40%" alt="img">
+
+              <div class="testimonials_playbtn">
+                <div class="video-btn  mobile_play_icon" data-bs-toggle="modal" data-bs-target="#MakeModal13"
+            data-src="https://www.youtube.com/embed/yQjgGAlvwu8">
+            <i class="video-btn cursor-pointer text-danger  fa-2x fas fa-play-circle" ></i>
+          </div>
+              </div>
+
+            </div>
+            <div class="text-center Testimonials_content">
+              <p class="fs-5 mt-4">“I really enjoyed it; The things <br> he said I could relate to because <br> it
+                happened in my household.”</p>
+              <h3>-NICK ANDERSON</h3>
+              <p>Orlando Magic</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- -------------------------model 1---------------- -->
+         <div class="modal fade" id="MakeModal13" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content  ">
+              <div class="modal-header text-right pull-right float-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body popup__overlay">
+                <iframe class="set_video_mobile" width="100%" height="500px" src="" id="video13" frameborder="0" allowscriptaccess="always"
+                  allow="autoplay" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- watch now modal    -->
+      
+      <script>
+        $(document).ready(function () {
+          var $videoSrc;
+          $(".video-btn").click(function () {
+            $videoSrc = $(this).data("src");
+          });
+          $("#MakeModal13").on("shown.bs.modal", function (e) {
+            $("#video13").attr(
+              "src",
+              $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+            );
+          });
+          $("#MakeModal13").on("hide.bs.modal", function (e) {
+            $("#video13").attr("src", $videoSrc);
+          });
+        });
+      </script>
+
+        <!--------------------------- model 1 end--------------------- -->
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="Testimonials-border  p-5">
+            <div class="circle_image text-center">
+              <img src="./images/circle-cropped 1.png" width="40%" alt="img">
+
+              <div class="testimonials_playbtn">
+                <div class="video-btn  mobile_play_icon" data-bs-toggle="modal" data-bs-target="#MakeModal14"
+                data-src="https://www.youtube.com/embed/yQjgGAlvwu8">
+                <i class="video-btn cursor-pointer text-danger  fa-2x fas fa-play-circle" ></i>
+              </div>
+
+              </div>
+            </div>
+            <div class="text-center Testimonials_content">
+
+              <p class="fs-5 mt-4">“He gives the folks a look at a different perspective. How can they be a little more
+                well-rounded; whether it’s work, family, health, etc. I think it will help people drive to get the
+                results you’re looking for.”</p>
+            </div>
+          </div>
+        </div>
+        <!-- -----------model 2---------------- -->
+        <div class="modal fade" id="MakeModal14" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content  ">
+              <div class="modal-header text-right pull-right float-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body popup__overlay">
+                <iframe class="set_video_mobile" width="100%" height="500px" src="" id="video14" frameborder="0" allowscriptaccess="always"
+                  allow="autoplay" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- watch now modal    -->
+      
+      <script>
+        $(document).ready(function () {
+          var $videoSrc;
+          $(".video-btn").click(function () {
+            $videoSrc = $(this).data("src");
+          });
+          $("#MakeModal14").on("shown.bs.modal", function (e) {
+            $("#video14").attr(
+              "src",
+              $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+            );
+          });
+          $("#MakeModal14").on("hide.bs.modal", function (e) {
+            $("#video14").attr("src", $videoSrc);
+          });
+        });
+      </script>
+
+        <!--------------- model 2 end---------- -->
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="Testimonials-border  p-5">
+            <div class="circle_image text-center">
+              <img src="./images/circle-cropped 2.png" width="40%" alt="img">
+              <div class="testimonials_playbtn">
+
+                <div class="video-btn  mobile_play_icon" data-bs-toggle="modal" data-bs-target="#MakeModal15"
+                data-src="https://www.youtube.com/embed/yQjgGAlvwu8">
+                <i class="video-btn cursor-pointer text-danger  fa-2x fas fa-play-circle" ></i>
+              </div>
+
+              </div>
+            </div>
+            <div class="text-center Testimonials_content">
+
+              <p class="fs-5 mt-4">“What I really enjoyed was that he was very transparent. And I really feel like he is
+                chosen to do this particular work.”</p>
+              <h3>-BRENDA MARCH</h3>
+              <p>City of Orlando</p>
+
+            </div>
+          </div>
+        </div>
+        <!-- ------------model 3------- -->
+        <div class="modal fade" id="MakeModal15" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content  ">
+              <div class="modal-header text-right pull-right float-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body popup__overlay">
+                <iframe class="set_video_mobile" width="100%" height="500px" src="" id="video15" frameborder="0" allowscriptaccess="always"
+                  allow="autoplay" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- watch now modal    -->
+      
+      <script>
+        $(document).ready(function () {
+          var $videoSrc;
+          $(".video-btn").click(function () {
+            $videoSrc = $(this).data("src");
+          });
+          $("#MakeModal15").on("shown.bs.modal", function (e) {
+            $("#video15").attr(
+              "src",
+              $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+            );
+          });
+          $("#MakeModal15").on("hide.bs.modal", function (e) {
+            $("#video15").attr("src", $videoSrc);
+          });
+        });
+      </script>
+
+        <!------- model 3 end--------- -->
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="Testimonials-border mt-4  p-5">
+            <div class="circle_image text-center">
+              <img src="./images/circle-cropped 3.png" width="40%" alt="img">
+              <div class="testimonials_playbtn">
+               
+                <div class="video-btn  mobile_play_icon" data-bs-toggle="modal" data-bs-target="#MakeModal16"
+                data-src="https://www.youtube.com/embed/yQjgGAlvwu8">
+                <i class="video-btn cursor-pointer text-danger  fa-2x fas fa-play-circle" ></i>
+              </div>
+
+              </div>
+            </div>
+            <div class="text-center Testimonials_content">
+
+              <p class="fs-5 mt-4">“ We definitely needed that <br> motivational boost. I felt it. I <br> got little
+                teary eyed at the <br> end 'cause it hit real close <br> to home.”</p>
+            </div>
+          </div>
+        </div>
+        <!-- -----------model 4---------------- -->
+        <div class="modal fade" id="MakeModal16" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content  ">
+              <div class="modal-header text-right pull-right float-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body popup__overlay">
+                <iframe class="set_video_mobile" width="100%" height="500px" src="" id="video16" frameborder="0" allowscriptaccess="always"
+                  allow="autoplay" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- watch now modal    -->
+      
+      <script>
+        $(document).ready(function () {
+          var $videoSrc;
+          $(".video-btn").click(function () {
+            $videoSrc = $(this).data("src");
+          });
+          $("#MakeModal16").on("shown.bs.modal", function (e) {
+            $("#video16").attr(
+              "src",
+              $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+            );
+          });
+          $("#MakeModal16").on("hide.bs.modal", function (e) {
+            $("#video16").attr("src", $videoSrc);
+          });
+        });
+      </script>
+
+        <!---------------- model 4 end----------- -->
+
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="Testimonials-border mt-4   p-5">
+            <div class="circle_image text-center">
+              <img src="./images/circle-cropped 2.png" width="40%" alt="img">
+              <div class="testimonials_playbtn">
+                <div class="video-btn  mobile_play_icon" data-bs-toggle="modal" data-bs-target="#MakeModal17"
+                data-src="https://www.youtube.com/embed/yQjgGAlvwu8">
+                <i class="video-btn cursor-pointer text-danger  fa-2x fas fa-play-circle" ></i>
+              </div>
+
+              </div>
+            </div>
+            <div class="text-center Testimonials_content">
+              <p class="fs-5 mt-4">
+                “The message he gave to the kids was great; it was unbelievable because he tells it to them how it needs
+                to be told. There’s no cutting lies, it’s straight to the point.”</p>
+              <h3>-BO OUTLAW</h3>
+              <p>Orlando Magic</p>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- ---------model 4---------- -->
+        <div class="modal fade" id="MakeModal17" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content  ">
+              <div class="modal-header text-right pull-right float-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body popup__overlay">
+                <iframe class="set_video_mobile" width="100%" height="500px" src="" id="video17" frameborder="0" allowscriptaccess="always"
+                  allow="autoplay" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- watch now modal    -->
+      
+      <script>
+        $(document).ready(function () {
+          var $videoSrc;
+          $(".video-btn").click(function () {
+            $videoSrc = $(this).data("src");
+          });
+          $("#MakeModal17").on("shown.bs.modal", function (e) {
+            $("#video17").attr(
+              "src",
+              $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+            );
+          });
+          $("#MakeModal17").on("hide.bs.modal", function (e) {
+            $("#video17").attr("src", $videoSrc);
+          });
+        });
+      </script>
+
+        <!---------- model 4 end------------ -->
+
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="Testimonials-border mt-4 p-5">
+            <div class="circle_image text-center">
+
+              <img src="./images/circle-cropped 1.png" width="40%" alt="img">
+              <div class="testimonials_playbtn">
+                <div class="video-btn  mobile_play_icon" data-bs-toggle="modal" data-bs-target="#MakeModal19"
+                data-src="https://www.youtube.com/embed/yQjgGAlvwu8">
+                <i class="video-btn cursor-pointer text-danger  fa-2x fas fa-play-circle" ></i>
+              </div>
+
+              </div>
+            </div>
+            <div class="text-center Testimonials_content">
+
+              <p class="fs-5 mt-4">
+                “I would definitely hire <br> Kendall. It's money well- <br>spent.”</p>
+            </div>
+          </div>
+        </div>
+        <!-- ---------model 6-------- -->
+        <div class="modal fade" id="MakeModal19" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content  ">
+              <div class="modal-header text-right pull-right float-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body popup__overlay">
+                <iframe  class="set_video_mobile" width="100%" height="500px" src="" id="video19" frameborder="0" allowscriptaccess="always"
+                  allow="autoplay" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- watch now modal    -->
+      
+      <script>
+        $(document).ready(function () {
+          var $videoSrc;
+          $(".video-btn").click(function () {
+            $videoSrc = $(this).data("src");
+          });
+          $("#MakeModal19").on("shown.bs.modal", function (e) {
+            $("#video19").attr(
+              "src",
+              $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+            );
+          });
+          $("#MakeModal19").on("hide.bs.modal", function (e) {
+            $("#video19").attr("src", $videoSrc);
+          });
+        });
+      </script>
+        <!---------- model 6 end------------- -->
+
+
+
+      </div>
+    </div>
+  </section><!-- End Services Section -->
+
+
+
+
+
+
+
+  <!--------------------------- Virtual 11th section start --------------------- -->
+
+  <section id="Virtual" class="Virtual">
+    <div class="container" data-aos="fade-up">
+      <div class="text-start Virtual-title">
+        <p class="fs-1 fw-bold"><i class="fas fa-bullseye"></i>Virtual</p>
+      </div>
+      <span>
+        <p class="fs-6 fw-bold">
+          customized virtual presentations are an online version of his widely requested topics and signature trainings.
+          These interactive sessions are the combination of practical, theoretical, and fundamental framework that allow
+          your organization to excel in each area of business.
+          Consequently,
+          maximizing performance and building lasting relationships.
+        </p>
+      </span>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="Testimonials-border">
+            <div class="text-start virtual_content">
+              <p class="fs-6 mt-2">Unlike in-person events, virtual events have the capacity to be recorded and reviewed
+                to maximum convenience
+                and serve as a resource for any organization.
+                In addition, it allows teams to share this incredible experience from any location and without acquiring
+                additional travel expenses.</p>
+              <p class="fs-6 mt-2">Kendall’s recent clients and corporate partners have included Tempur Sealy, Workplace
+                Success Group, International Association of IT Asset Managers, KeHE and many others. </p>
+            </div>
+            <a href="./login1page.html" target="_blank"> <button class="btn request_now_btn mb-2  btn-lg mt-4 "> REQUEST
+                NOW</button></a>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class=" virtual_laptopimage">
+            <div class=" img-fluid text-center  ">
+              <img src="./images/laptop.jpg" width="70%" alt="img">
+            </div>
+
+            <div class="laptop_video_play">
+                <div class="video-btn   play_icon" data-bs-toggle="modal" data-bs-target="#MakeModal20"
+                data-src="https://www.youtube.com/embed/yQjgGAlvwu8">
+                <i class="video-btn cursor-pointer text-danger  fa-2x fas fa-play-circle" ></i>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ---------------------video play modal -------------------- -->
+        <div class="modal fade" id="MakeModal20" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content  ">
+              <div class="modal-header text-right pull-right float-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body popup__overlay">
+                <iframe class="set_video_mobile" width="100%" height="500px" src="" id="video20" frameborder="0" allowscriptaccess="always"
+                  allow="autoplay" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- watch now modal    -->
+      
+      <script>
+        $(document).ready(function () {
+          var $videoSrc;
+          $(".video-btn").click(function () {
+            $videoSrc = $(this).data("src");
+          });
+          $("#MakeModal20").on("shown.bs.modal", function (e) {
+            $("#video20").attr(
+              "src",
+              $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+            );
+          });
+          $("#MakeModal20").on("hide.bs.modal", function (e) {
+            $("#video20").attr("src", $videoSrc);
+          });
+        });
+      </script>
+        <!-- ---------------------video plauy modal -------------------- -->
+
+      </div>
+    </div>
+  </section>
+  <!-- Virtual 11th section end  -->
+
+
+
+  <!------------------- OUR tEAM  section start ---------------------------- -->
+  <section id="Our_Team" class="Our_Team">
+    <div class="container" data-aos="fade-up">
+      <div class="text-center ourTeam-title ">
+        <h3 class="fw-bold">GET TO KNOW</h3>
+        <p class="fs-1 fw-bold">Our Team</p>
+      </div>
+
+      <!-- CEO content  -->
+      <div class="ceo_section bg-white ">
+        <div class="row  mobileview-image-reverse">
+          <div class="col-lg-6 ">
+            <div class="ceo_section_centent p-4">
+              <div class="single-choose-item ceo_thought">
+                <h4 class="fw-bold">GLENNLEE</h4>
+                <h4 class="fw-bold">CEO</h4>
+              </div>
+              <div class="single-choose-item fw-bold">
+                <p>Kendall Ficklin is a thriving entrepreneur, sought-after sales coach,
+                  nationally-recognized speaker as well as publisher author.</p>
+              </div>
+              <div class="single-choose-item">
+                <p>For more than 20 years, Kendall Ficklin has been at the helm of his own successful companies.
+                  He is the author of five business books and founder of a personal and business development community
+                  GRINDATION. Kendall is also the creator and facilitator of B.O.S.C. (The Business of Speaking and
+                  Coaching
+                  Training Program)
+                  where he serves as a sales coach, leadership instructor and motivational speaker.</p>
+              </div>
+          <a href="./aboutus.html" target="_blank">   <button class="btn color-ref btn-lg">READ MORE</button></a> 
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="video-img-thumbnail text-center">
+              <img src="./images/CEO.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- resume temp  -->
+      <div class="ourteam_resume_section mt-5">
+        <div class="row gy-3">
+          <div class="col-lg-6  col-md-6 col-sm-12 d-flex align-items-stretch resume_name" data-aos="zoom-in"
+            data-aos-delay="100">
+            <div class="ourteam_resume-border  bg-white">
+              <div class="circle_image text-start p-3">
+                <img src="./images/circle-cropped 3.png" width="30%" alt="img">
+                <div class="resume_TextName">
+                  <h4> <span class="fw-bold fs-3">MELANIE </span> <span class="fs-3"> COOK</span></h4>
+                  <p>Chief Operating Officer
+                  </p>
+                </div>
+
+              </div>
+              <div class="border_underline"></div>
+              <div class="ourteam_main_Content">
+                <div class="text-start OurTeam_content">
+                  <h2 class="resume_quote"> CAREER HIGHLIGHTS:</h2>
+                  <ul>
+                    <li>20+ years serving in leadership and other influential roles</li>
+                    <li>20+ years teaching intra and inter communication across cultures</li>
+                    <li>10+ years providing clarity and strategy to small and mid-size businesses</li>
+                  </ul>
+                </div>
+                <div class="text-start OurTeam_content">
+                  <h2 class="resume_quote">PREVIOUS PARTNERS:</h2>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <ul>
+                        <li>Johns Hopkins University</li>
+                        <li>Urban Alliance</li>
+                        <li>Aetna</li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-6">
+                      <ul>
+                        <li>Johns Hopkins University</li>
+                        <li>Urban Alliance</li>
+                        <li>Aetna</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-start OurTeam_content favorite_quote_text">
+                  <h2 class="resume_quote">FAVORITE QUOTE:</h2>
+                  <p>“The single biggest problem in communication is the illusion that it has taken place” —George
+                    Bernard
+                    Shaw</p>
+                </div>
+                <div class="text-start OurTeam_content">
+                  <h2 class="resume_quote"> SUPERPOWER:</h2>
+                  <p>Laser Focus to identify and communicate areas of inefficiency with the ability to create
+                    viable solutions within a condensed amount of time.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- two----------------- -->
+
+          <div class="col-lg-6  col-md-6 col-sm-12 d-flex align-items-stretch resume_name" data-aos="zoom-in"
+            data-aos-delay="100">
+            <div class="ourteam_resume-border  bg-white">
+              <div class="circle_image text-start p-3">
+                <img src="./images/circle-cropped 1.png" width="30%" alt="img">
+                <div class="resume_TextName">
+                  <h4><span class="fw-bold fs-3">ZAKIYRAH </span> <span class="fs-3">FICKLIN</span></h4>
+                 
+                </div>
+                <div class="resume_pera ">
+                  <p> Director of Product Development</p>
+                  </div>
+              </div>
+
+              <div class="border_underline"></div>
+
+              <div class="ourteam_main_Content">
+                <div class="text-start OurTeam_content">
+                  <h2 class="resume_quote"> CAREER HIGHLIGHTS:</h2>
+                  <ul>
+                    <li>Assisted in building a small business to rank #278 in Inc. 500 Fastest Growing Companies. </li>
+                    <li>Built Search Engine Optimization strategies for company site that
+                      increased traffic from 1,000 to 7,000 per day.</li>
+                    <li>M.A in Journalism </li>
+                  </ul>
+                </div>
+                <div class="text-start OurTeam_content">
+                  <h2 class="resume_quote">PREVIOUS PARTNERS:</h2>
+                  <div class="row">
+                    <div class="col-lg-10">
+                      <ul>
+                        <li>Private Label Extensions</li>
+                        <li>Girls, Inc.</li>
+                        <li>Atlanta Dream, WNBA</li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="text-start OurTeam_content favorite_quote_text">
+                  <h2 class="resume_quote">FAVORITE QUOTE:</h2>
+                  <p>“Worry leaves you functioning at half capacity. Don’t worry <br>
+                    about the failure, just make a move.”</p>
+                </div>
+                <div class="text-start OurTeam_content">
+                  <h2 class="resume_quote"> SUPERPOWER:</h2>
+                  <p>Laser Focus to identify and communicate areas of inefficiency with the ability to create
+                    viable solutions within a condensed amount of time.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- -------------------- three  ------------------------------ -->
+          <div class="col-lg-6  col-md-6  ol-sm-12 d-flex align-items-stretch resume_name" data-aos="zoom-in"
+            data-aos-delay="100">
+            <div class="ourteam_resume-border  bg-white">
+              <div class="circle_image text-start p-3">
+                <img src="./images/circle-cropped 2.png" width="30%" alt="img">
+                <div class="resume_TextName">
+                  <h4> <span class="fw-bold fs-3">CHRISTIN </span><span class="fs-3">PRATER</span></h4>
+                
+                </div>
+                <div class="resume_pera ">
+                  <p>Director of Client Experience</p>
+                </div>
+              </div>
+
+              <div class="border_underline"></div>
+
+              <div class="ourteam_main_Content">
+                <div class="text-start OurTeam_content">
+                  <h2 class="resume_quote"> CAREER HIGHLIGHTS:</h2>
+                  <ul>
+                    <li>MS Organizational Human Resource Development</li>
+                    <li>Helped build a 7-figure business from $0 in less than 5 years</li>
+                    <li>Organized and coordinated many social and corporate events that increased company revenue </li>
+                  </ul>
+                </div>
+                <div class="text-start OurTeam_content ">
+                  <h2 class="resume_quote">PREVIOUS PARTNERS:</h2>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <ul>
+                        <li>Dillards, Inc.</li>
+                        <li>Nordstrom</li>
+                        <li>94.9 KLTY Radio Station</li>
+                        <li>Childcare Group</li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-6">
+                      <ul>
+                        <li>The Bell Tower on 34th</li>
+                        <li>The Orion Ballroom</li>
+                        <li>Perot Museum of Nature and Science</li>
+                        <li>Accountable Healthcare Staffing</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-start OurTeam_content favorite_quote_text">
+                  <h2 class="resume_quote">FAVORITE QUOTE:</h2>
+                  <p>“Well-behaved women seldom make history.” —Laurel Thatcher Ulrich</p>
+                </div>
+                <div class="text-start OurTeam_content">
+                  <h2 class="resume_quote"> SUPERPOWER:</h2>
+                  <p>I have a knack for building relationships and bringing people together with the goal of providing
+                    excellent service that cultivates lasting partnerships. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- --------------four------------------------- -->
+          <div class="col-lg-6  col-md-6 ol-sm-12 d-flex align-items-stretch resume_name" data-aos="zoom-in"
+            data-aos-delay="100">
+            <div class="ourteam_resume-border  bg-white">
+              <div class="circle_image text-start p-3">
+                <img src="./images/circle-cropped 3.png" width="30%" alt="img">
+                <div class="resume_TextName">
+                  <h4><span class="fw-bold fs-3">JESSE</span> <span class="fs-3">ROSS</span></h4>
+                </div>
+                <div class="resume_pera ">
+                <p>Executive Coach and Consultant</p>
+              </div>
+              </div>
+
+
+              <div class="border_underline"></div>
+
+              <div class="ourteam_main_Content">
+                <div class="text-start OurTeam_content">
+                  <h2 class="resume_quote"> CAREER HIGHLIGHTS:</h2>
+                  <ul>
+                    <li>Built a 6-figure business from $0 in less than 2 years</li>
+                    <li>Scaled a professional development talent network from 300 to 4000 members in 18 months</li>
+                    <li>Named one of Minnesota’s top young professional entrepreneurs to watch in 2019</li>
+                  </ul>
+                </div>
+                <div class="text-start OurTeam_content favorite_quote_text">
+                  <h2 class="resume_quote">PREVIOUS PARTNERS:</h2>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <ul>
+                        <li>The Minneapolis Foundation</li>
+                        <li>The National Basketball Association</li>
+                        <li>The Federal Reserve Bank of Minneapolis</li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-6">
+                      <ul>
+                        <li>General Mills</li>
+                        <li>WeWork</li>
+                        <li>Lululemon</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-start OurTeam_content favorite_quote_text">
+                  <h2 class="resume_quote">PREVIOUS PARTNERS:</h2>
+                  <p>“Everything you need is in the house.”</p>
+                </div>
+                <div class="text-start OurTeam_content">
+                  <h2 class="resume_quote"> SUPERPOWER:</h2>
+                  <p>My superpower is being very result driven.
+                    I blend the ability to have a professional presence but connect with clients on a personal level
+                    that allows me to gain their
+                    trust and help them achieve their results.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+  </section><!-- our team 9th section End Services Section -->
+
+
+
+  <!-- take-our 12th section start  -->
+
+  <header id="forth_freeAssessment">
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source
+        src="https://player.vimeo.com/external/210741487.sd.mp4?s=f3bacb23e5791a132f2576ed2b935bd229ec0247&profile_id=164&oauth2_token_id=57447761"
+        type="video/mp4">
+    </video>
+    <div class="container h-100 assessment_heading">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <h1 class="fs-3 ">Take Our</h1>
+          <p class="assessment_heading_cursive m-4 fs-2 fw-bolder">Free Assessment</p>
+          <h3 class="fw-bold fs-2">Measuring the WHAT, WHY and HOW of <br> Personal Performance </h3>
+          <a href="./TakeAssisment.html" target="_blank"> <button class="btn home-button1 fw-bold fs-4 mt-3">Get
+              Started</button></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!-- 
+  <section id="Take_our">
+    <div class="overlay1"></div>
+    <div class="container text-center text-white col-8 col-sm-12">
+      <div class="Take_our_heading mt-5">
+        <h3 class=""> Take Our</h3>
+      </div>
+      <div class="Take_our_Peragraph pt-3 ">
+        <p class="fs-1">Free Assessment
+        </p>
+        <p class="fs-3">
+          Measuring the WHAT, WHY and HOW of <br> Personal Performance
+        </p>
+
+        <button class="btn btn-danger mt-5 btn-lg">Get Started</button>
+      </div>
+    </div>
+  </section> -->
+  <!-- take-our 12th section end  -->
+
+
+
+
+  <!-- Get-started page 13th section start  -->
+  <section id="get_started" class="get_started">
+    <div class="container" data-aos="fade-up">
+      <div class="text-center get_started_title ">
+        <h4 class="fw-bold">READY TO</h4>
+        <p class="fs-1 fw-bold">Get Started</p>
+      </div>
+      <div class="row justify-content-center">
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-2 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="get_started-border">
+            <div class="text-center get_started_content bg-white shadow-lg">
+              <p class="fs-5 fw-bolder"><span class="text-danger">Take Our </span> FREE <br> Business Health <br>
+                Assessment</p>
+              <a href="./teamhealthcheck.html" target="_blank"> <button class="btn  btn-getstated1">Get
+                  started</button></a>
+            </div>
+
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-2 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="get_started-border position-relative">
+            <div class="text-center get_started_content2 bg-white shadow-lg">
+              <p class="fs-5 fw-bolder mt-4"> Ready To <span class="text-danger"> Grow </span> <br> Your <span
+                  class="text-danger"> Business?</span> </p>
+
+              <a href="./90days.html" target="_blank"> <button class="btn btn-getstated2 mt-3">Let's Go</button></a>
+            </div>
+
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Get-started page 13th section end  -->
+
+
+
+  <!-- Footer  page 14th section start  -->
+
+  <footer id="footer">
+    <div class="container">
+      <img src="./images/GLENN LEE.png" width="100px" alt="">
+      <div class="footer_icon mt-3">
+        <a href="https://www.facebook.com/GRSoftSolution/"> <i class="fa-2x m-2 text-white fab fa-facebook "></i></a>
+        <a href="#"> <i class="fa-2x m-2 text-white fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/grsoftsolution/"> <i
+            class="fa-2x  m-2 text-white fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/grsoft-solutions-p-ltd.?trk=company_logo"> <i
+            class="fa-2x m-2  text-white fab fa-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Glennlee.grsoftsolution.com</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://grsoftsolution.com/">GrSoftSolution</a>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer  page 14th section end  -->
+
+  <!-- --------------------------right side bar  ------------------>
+  <section id="lefticon_panel">
+    <div class="sidenav_left">
+      <a href="https://www.facebook.com/GRSoftSolution/" target="_blank"> <i
+          class="fa-2x  text-white fab fa-facebook"></i></a><br>
+      <a href="https://www.instagram.com/grsoftsolution/" target="_blank"> <i
+          class="fa-2x text-white fab fa-instagram "></i></a><br>
+      <a href="https://www.linkedin.com/company/grsoft-solutions-p-ltd.?trk=company_logo" target="_blank"> <i
+          class="fa-2x text-white fab fa-linkedin-in "></i></a><br>
+      <a href="#" target="_blank"> <i class="fa-2x text-white fab fa-youtube-square"></i></a><br>
+    </div>
+  </section>
+
+
+  <!-- left side bar  -->
+  <section id="rightticon_panel">
+    <div class="sidenav_right">
+      <a href="./Book.html" target="_blank"> <span class="right_text fw-bold fs-4 text-white">BOOK NOW</span></a>
+    </div>
+  </section>
+
+  <!-- pop up image code  -->
+
+
+  <div id="popup">
+    <img src="./images/banner.jpg" width="100%" alt="popup" style="position: relative;">
+    <span id="close"><i class="fa-2x fas fa-times m-1 text-white" style="cursor: pointer;"></i></span>
+    <div class="banner_button">
+      <a href="./TakeAssisment.html" target="_blank"> <button class="btn text-white Take-Assessment-color">Take Assessment</button></a>
+    </div>
+    <!-- <div class="banner_button2">
+  <button class="btn">close</button>
+</div> -->
+
+  </div>
+
+
+  <!-- scrooll down button  -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-2x fas fa-arrow-circle-up"></i></button>
+
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+  <!-- scrooll down button  -->
+
+  <!-- pop up start-->
+  <script>
+    $(document).ready(function () {
+
+      $("#popup").hide().fadeIn(3000);
+
+      $("#close").on("click", function (e) {
+        e.preventDefault();
+        $("#popup").fadeOut(1000);
+      });
+
+    });
+
+  </script>
+  <!-- pop up end-->
+
+
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+  <script src="./css/swc.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>]
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+
+</html>

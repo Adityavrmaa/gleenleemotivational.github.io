@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.days90-title > h1{
+   font-weight: 900;
+   text-align: center;
+   font-size: 3.5rem;
+ 
+}
+
+.text_2 > h1{
+    font-weight: 900;
+    text-align: center;
+
+}
+
+.button_text  a > button {
+ color:white;
+ background-color:black;
+ font-weight: 400;
+ font-size: 1.3rem;
+ padding: 15px;
+ border-radius: 50px;
+ -webkit-border-radius: 50px;
+ -moz-border-radius: 50px;
+ -ms-border-radius: 50px;
+ -o-border-radius: 50px;
+ margin-bottom: 25px;
+}
+
+
+
+@media (max-width: 767.98px) { 
+    .button_text > button{
+        font-size: 0.8rem;
+       }
+
+       .days90-title > h1{
+        font-size: 2.7rem;
+     }
+
+     .youtube-video .embed-responsive > iframe{
+    height: 300px!important;
+     }
+ }

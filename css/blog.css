@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: avenirLight;
+}
+
+:root{
+    --orange: #8B0000;
+    --white:white;
+    --text-color:#31353d;
+    --bgcolor:#31353D;
+    --cardColor:#DBDBDB;
+}
+
+p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #3B404B;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url("../fonts/Avenir.otf");
+}
+
+@font-face {
+    font-family: avenirLight;
+    src: url("../fonts/AvenirLTProLight.otf");
+  }
+
+
+
+
+
+
+
+
+
+  
+  /* ------------------------------- */
+  /* image circle code
+  ---------------------------------- */
+  .media {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .d-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .media .mr-3{
+    margin-right: 1rem !important;
+  }
+  .media img{
+    width: 48px !important;
+    height: 48px !important;
+    padding: 2px;
+    border: 2px solid #f4f4f4;
+  } 
+  .media-body {
+    -ms-flex: 1;
+    flex: 1;
+    padding: .4rem !important;
+  }
+  .media-body p{
+    font-family: 'Rokkitt', serif;	
+    font-weight: 500 !important;
+    font-size: 14px;
+    color: #88898a;
+  }
+  .media-body small span{
+    font-family: 'Rokkitt', serif;	
+    font-size: 12px;
+    color: #aaa;
+    margin-right: 10px;
+  }
+
+
+  /* ------------------------------------ */
+.blog_contant_page{
+    margin-top: 100px;
+}
+  .top_blog_text > h1{
+    font-family: 'Yeseva One', cursive;
+    font-size: 112px;
+  }
+
+  .text_area a> h1{
+    font-family: Avenir;
+  }
+  .text_area  a> h1:hover{
+   color: #88898a;
+   cursor: pointer;
+  }
+
+  a{
+    color: #1d1e1f!important;
+    text-decoration: none;
+  }
+
+  .media-icon > a{
+  margin: 10px;
+  font-size: 20px;
+  }
+
+  .bottom_right >a {
+    margin: 10px;
+  }
+
+/* media query start here    */
+  @media (max-width: 768px) {
+    .top_blog_text > h1 {
+        font-size: 75px!important;
+    }
+    .bottom_right{
+        display: none;
+    }
+   }
+
+
+   
